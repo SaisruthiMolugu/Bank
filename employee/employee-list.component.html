@@ -1,0 +1,24 @@
+<table align = "center" width = "50%" border="1" >
+    <caption>Employe Details</caption>
+                 <tr >
+                       <th>Employee id </th>
+                       <th>Employee Name </th>
+                       <th>Employee Salary </th>
+                       <th>Departmwnt number </th>
+                       <th>Action</th>
+                   </tr>
+                    <tr *ngFor = "let e of empList;index as i" align="center">
+                         <td>{{e.empid}}</td>
+                         <td>{{e.ename}}</td>
+                         <td>{{e.salary}}</td>
+                         <td>{{e.deptno}}</td>
+                         <td><input type="button" value="Delete" (click)="deleteEmployeeRow(i)"></td>
+                    </tr>
+</table>
+<!--
+<h1>Employees details</h1>
+<ol >
+ <li *ngFor ="let e of empList">Employee id :  {{e.empid}}          Employee Name : {{e.ename}}            Employee Salary : {{e.salary}}              Department number: {{e.deptno}}</li>
+ 
+</ol>
+-->
