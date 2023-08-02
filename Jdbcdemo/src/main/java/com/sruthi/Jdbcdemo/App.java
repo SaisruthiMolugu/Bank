@@ -1,12 +1,13 @@
 package com.sruthi.Jdbcdemo;
 import com.sruthi.Jdbc.model.service.*;
+
 import java.util.Scanner;
 public class App
 {
 	public static void main (String[] args)
 	{
 		BookService bookService = new 	BookService();
-		Scanner sc = new 	Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		int opt = 0;
 		do
 		{
