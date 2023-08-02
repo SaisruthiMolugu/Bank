@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+      xmlns="http://www.springframework.org/schema/beans"
+      xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+   
+  <!--   <context:annotation-config/>  -->
+   <context:component-scan base-package="com.sruthi.spcd.beans"/>
+  
+</beans>
+ <!--  <bean id ="address" class ="com.sruthi.spcd.beans.Address">
+         <property    name ="hno"  value= "1-23 "/>
+         <property    name ="streetname"  value=" MG street  "/>
+         <property     name ="city"  value="Hyderabad"/>
+         <property    name ="state"  value="Telanganna"/>
+     </bean>
+     <bean id ="add1" class ="com.sruthi.spcd.beans.Address">
+         <property    name ="hno"  value= "3-21 "/>
+         <property    name ="streetname"  value=" MG street  "/>
+         <property     name ="city"  value="armour"/>
+         <property    name ="state"  value="goa"/>
+     </bean>
+     <bean id = "per1"  class ="com.sruthi.spcd.beans.Person" >
+        <property name= "ssn"  value ="768"/>
+        <property name= "name" value ="ajay"/>
+        <property name ="age"  value="20"/>
+         
+     </bean>-->
+
+
+ 
+<!-- 
+  <bean id ="add1" class ="com.sruthi.spcd.beans.Address" p:hno="1-2-3"
+  p:streetname="mg street"  p:city="banglore" p:state="karnataka"/>
+   
+  <bean id ="add2" class ="com.sruthi.spcd.beans.Address" c:hno="3-21"
+  c:streetname="VM street"  c:city="HYDERABAD" c:state="TELANAGANA"/>
+   
+  
+  <bean  id ="add2" class ="com.sruthi.spcd.beans.Address">
+  
+         <property name="hno"    value ="3-21" />
+        <property name = "streetname" value ="VM street"/>
+        <property name = "city" value="HYDERABAD"/>
+        <property name ="state" value ="TELANAGANA"/>
+  
+  </bean> 
+     
+     <bean id = "per1"  class ="com.sruthi.spcd.beans.Person" c:ssn="958"
+     c:name="bhanu"  c:age="30" c:address-ref="add1"/> 
+         
+     <bean id = "per1"  class ="com.sruthi.spcd.beans.Person" p:ssn="5849"
+     p:name="ajay"  p:age="30" p:address-ref="add1"/>
+   <property name= "ssn"  value ="768"/>
+        <property name= "name" value ="ajay"/>
+        <property name ="age"  value="20"/>
+        <property name = "address"  ref="add2"/>
+        
+     </bean>
+     
+     
+     <bean id="ctry" class= "com.sruthi.spcd.beans.Country">
+  <property name = "countryname" value ="India"/>
+  <property name ="currencyName" value ="Rupees"/>
+  <property name="states">
+   <list>
+  <set>
+  <value>Andhra Pradesh</value>
+  <value> goa</value>
+  <value> Telanganna</value>
+  <value>Tamilnadu</value>
+  <value>Assam</value>
+  </set></list>
+  <map>
+        <entry   key ="AP"   value ="Andhra Pradesh"/>
+        <entry key = "TS"    value="Telanganna"/>
+        <entry key ="MP"     value ="Madhya Pradesh"/>
+        <entry key ="GOA"     value="Goa"/>
+        <entry key="TN"       value="TamilNadu"/>       
+  </map></property> 
+  </bean>-->
+        

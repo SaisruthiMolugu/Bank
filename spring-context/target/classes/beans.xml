@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+      xmlns="http://www.springframework.org/schema/beans"
+      xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id ="aar1" class="com.sruthi.ass.AadharCard">
+           <property name="aadharnumber"  value="62352346"/>
+           <property name= "name" value ="Sruthi"/>
+           <property name= "dob" value="02/11/2023"/>
+           <property name ="address" value ="1-21,pamukunta,rajapet,ts"/>
+           
+        </bean>
+        <bean id ="citi1" class="com.sruthi.ass.Citizen" autowire='byType' >
+            <property name="age" value="20"/>
+           <!-- property name ="aadharcard" ref="aar1"/> -->
+          
+           
+        </bean>
+        </beans>
