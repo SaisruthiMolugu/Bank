@@ -1,0 +1,32 @@
+<table align="center" width="50%" border="1" bgcolor="lightblue">
+    <caption>Product Details</caption>
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product price</th>
+        <th>Manufacturer </th>
+    </tr>
+    <tr *ngFor = "let p of productList">
+        <td>{{p.productid}}</td>
+        <td>{{p.productname}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.company}}</td>
+    </tr>
+</table>
+<!--<table>
+<input type="text" #txt/>
+<input type="button" value="click" (click)="getproductbyid(txt.value)"/>
+<caption>Product Details</caption>
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product price</th>
+        <th>Manufacturer </th>
+    </tr>
+    <tr >
+        <td>{{List.productid}}</td>
+        <td>{{List.productname}}</td>
+        <td>{{List.price}}</td>
+        <td>{{List.company}}</td>
+    </tr>
+</table> -->

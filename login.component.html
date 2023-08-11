@@ -1,0 +1,14 @@
+<table bgcolor="lightblue">
+    <tr>
+        <th>Username</th>
+        <td><input type="text"  #username></td>
+    </tr>
+    <tr>
+        <th>Password</th>
+        <td><input type="password" #password></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Signin" (click)="authenticate(username.value,password.value)"></td>
+        <td><input type ="reset" value="Cancel"></td>
+    </tr>
+</table>

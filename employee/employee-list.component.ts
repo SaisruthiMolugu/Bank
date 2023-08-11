@@ -4,7 +4,7 @@ import { empData } from "./Employee-data";
 import { EmployeeService } from "./employee.service";
 @Component({
     selector:'emp-list',
-    templateUrl : './employee-list.component.html'
+    templateUrl : './employee-list.component.html',
 
 })
 export class EmployeeListComponent
@@ -19,4 +19,5 @@ export class EmployeeListComponent
     {
       this.empList.splice(index,1);
     }
+    
 }  
